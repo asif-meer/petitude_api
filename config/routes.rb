@@ -53,4 +53,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  # devise_for :users, controllers: {:registrations => 'users/registrations', :sessions => 'users/sessions', confirmations: 'users/confirmations'}
+  devise_for :users
 end
