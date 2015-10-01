@@ -24,6 +24,7 @@
 #  date_of_birth          :date
 #  gender                 :string(1)
 #  authentication_token   :string
+#  password_salt          :string
 #
 # Indexes
 #

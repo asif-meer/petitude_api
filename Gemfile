@@ -22,7 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'simple_token_authentication', '~> 1.0'
-
+gem "bcrypt-ruby", :require => "bcrypt"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

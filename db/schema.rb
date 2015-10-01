@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151001070456) do
+ActiveRecord::Schema.define(version: 20151001123321) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                            default: "", null: false
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20151001070456) do
     t.date     "date_of_birth"
     t.string   "gender",                 limit: 1
     t.string   "authentication_token"
+    t.string   "password_salt"
   end
 
   add_index "users", ["authentication_token"], name: "index_users_on_authentication_token"
