@@ -17,6 +17,12 @@
 #  updated_at             :datetime         not null
 #  name                   :string
 #  role                   :integer
+#  first_name             :string
+#  middle_name            :string
+#  last_name              :string
+#  mobile_number          :string
+#  date_of_birth          :date
+#  gender                 :string(1)
 #
 # Indexes
 #
