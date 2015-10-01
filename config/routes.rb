@@ -54,6 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   # devise_for :users, controllers: {:registrations => 'users/registrations', :sessions => 'users/sessions', confirmations: 'users/confirmations'}
-  root 'welcome#index'
+  root 'home#index'
   devise_for :users
 end
