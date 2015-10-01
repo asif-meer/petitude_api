@@ -6,8 +6,12 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
 
   def create
     # puts params
-    build_resource
+    # build_resource
+    # resource.skip_confirmation!
+    resource = User.new(sign_up_params)
     resource.skip_confirmation!
+
+    puts "resource: #{resource}"
     if resource.save
       sign_in resource
       render :status => 200,
@@ -22,4 +26,11 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
                         :data => {} }
     end
   end
+
+  protected
+
+  def sign_up_params
+    devise_parameter_sanitizer.sanitize(:sign_up)
+  end
+
 end
