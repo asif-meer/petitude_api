@@ -65,6 +65,7 @@ group :development do
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
   gem 'sqlite3'
+  gem 'annotate'
 end
 
 group :development, :test do
