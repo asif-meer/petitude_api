@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  acts_as_token_authentication_handler_for User
+  # acts_as_token_authentication_handler_for User
 
     # Security note: controllers with no-CSRF protection must disable the Devise fallback,
     # see #49 for details.
