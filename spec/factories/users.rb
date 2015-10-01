@@ -23,9 +23,11 @@
 #  mobile_number          :string
 #  date_of_birth          :date
 #  gender                 :string(1)
+#  authentication_token   :string
 #
 # Indexes
 #
+#  index_users_on_authentication_token  (authentication_token)
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #

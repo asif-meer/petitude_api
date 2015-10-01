@@ -250,6 +250,10 @@ GEM
     simple_form (3.2.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    simple_token_authentication (1.10.0)
+      actionmailer (>= 3.2.6, < 5)
+      actionpack (>= 3.2.6, < 5)
+      devise (~> 3.2)
     slop (3.6.0)
     spring (1.4.0)
     spring-commands-rspec (1.0.4)
@@ -326,6 +330,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
+  simple_token_authentication (~> 1.0)
   spring
   spring-commands-rspec
   sqlite3
